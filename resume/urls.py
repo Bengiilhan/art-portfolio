@@ -6,11 +6,11 @@ from django.conf.urls.static import static
 from django.contrib import sitemaps
 from django.contrib.sitemaps.views import sitemap
 from django.urls import path
-from resume.sitemaps import StaticViewSitemap, YourModelSitemap
+from resume.sitemaps import StaticViewSitemap, ResimSitemap
 
 sitemaps = {
     'static': StaticViewSitemap(),
-    'models': YourModelSitemap(),
+    'models': ResimSitemap(),
 }
 
 
