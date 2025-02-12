@@ -26,6 +26,7 @@ ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="seyhanilhan.com,www.seyhanilhan
 
 # Application definition
 INSTALLED_APPS = [
+    'django.contrib.sitemaps',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
