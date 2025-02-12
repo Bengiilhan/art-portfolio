@@ -24,16 +24,16 @@ def create_admin_user(request):
         return HttpResponse("Admin user created successfully!")
     else:
         return HttpResponse("Admin user already exists.")
+def list_admin_users(request):
+    users = User.objects.filter(is_superuser=True)
+    if users.exists():
+        return HttpResponse(", ".join([user.username for user in users]))
+    return HttpResponse("No admin users found!")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('resume.urls')),
-    path("create-admin/", create_admin_user)
+    path("create-admin/", create_admin_user),
+    path("list-admins/", list_admin_users),
 ]
-from django.contrib.auth.models import User
-from django.http import HttpResponse
-def create_admin_user(request):
-    if not User.objects.filter(username="admin").exists():
-        User.objects.create_superuser("seyhan", "bengiilhan2003@gmail.com", "bengi123")
-        return HttpResponse("Admin user created successfully!")
-    else:
-        return HttpResponse("Admin user already exists.")
+
+
