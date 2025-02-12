@@ -17,7 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+from django.core.management import call_command
+from django.http import HttpResponse
+
+def run_migrations(request):
+    call_command("migrate")
+    return HttpResponse("Migrations applied successfully!")
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('resume.urls'))
+    path('',include('resume.urls')),
+    path("run-migrations/", run_migrations)
 ]
