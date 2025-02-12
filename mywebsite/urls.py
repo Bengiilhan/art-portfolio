@@ -19,8 +19,8 @@ from django.urls import path,include
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 def create_admin_user(request):
-    if not User.objects.filter(username="admin").exists():
-        User.objects.create_superuser("admin", "admin@example.com", "admin1234")
+    if not User.objects.filter(username="seyhan").exists():
+        User.objects.create_superuser("seyhan", "bengiilhan@hotmail.com", "bengi123")
         return HttpResponse("Admin user created successfully!")
     else:
         return HttpResponse("Admin user already exists.")
