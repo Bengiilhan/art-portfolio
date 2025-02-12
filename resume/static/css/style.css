@@ -153,3 +153,36 @@ h4.text-left {
     margin-top: 200px;
     /* 250px navbar + biraz ekstra boşluk */
 }
+
+/* Masaüstünde (Bilgisayarda) resmin boyutunu sabitle */
+.new-image {
+    max-width: 350px;
+    /* Bilgisayar için 350px genişlik */
+    height: auto;
+}
+
+/* Mobilde (Telefon ve Tablet) resmin boyutunu küçült */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        /* Mobilde içerikler üst üste gelsin */
+        align-items: center;
+        /* Ortaya hizala */
+        text-align: center;
+        /* Yazıları ortala */
+    }
+
+    .new-image {
+        max-width: 60%;
+        /* Mobilde ekranın %80’ini kaplasın */
+        height: auto;
+        /* Oranını korusun */
+    }
+
+    .about-text {
+        font-size: 16px;
+        /* Yazı boyutunu küçült */
+        padding: 10px;
+        /* Kenarlardan iç boşluk ekle */
+    }
+}
