@@ -16,8 +16,24 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-
+from django.contrib.auth.models import User
+from django.http import HttpResponse
+def create_admin_user(request):
+    if not User.objects.filter(username="admin").exists():
+        User.objects.create_superuser("admin", "admin@example.com", "admin1234")
+        return HttpResponse("Admin user created successfully!")
+    else:
+        return HttpResponse("Admin user already exists.")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('resume.urls')),
+    path("create-admin/", create_admin_user)
 ]
+from django.contrib.auth.models import User
+from django.http import HttpResponse
+def create_admin_user(request):
+    if not User.objects.filter(username="admin").exists():
+        User.objects.create_superuser("seyhan", "bengiilhan2003@gmail.com", "bengi123")
+        return HttpResponse("Admin user created successfully!")
+    else:
+        return HttpResponse("Admin user already exists.")
