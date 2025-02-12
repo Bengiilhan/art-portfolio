@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-10 offset-md-1"> <!-- Sayfada ortalamak için -->
+            <div class="d-flex align-items-center p-4 border rounded shadow">
+                <!-- Sol tarafta resim -->
+                <div class="me-4">
+                    <img class="new-image img-fluid rounded" src="{% static 'images/home.jpg' %}" alt="new image"
+                        style="max-width: 350px;">
+                </div>
+                <!-- Sağ tarafta yazı -->
+                <div>
+                    <h2>Hakkında</h2>
+                    <p>
+                        Seyhan İlhan, Denizli, Türkiye'de bulunan kişisel atölyesinde aktif olarak sanat üretimi yapan
+                        bir sanatçıdır. 1991 yılında Dokuz Eylül Üniversitesi Buca Eğitim Fakültesi Resim Bölümü'ndeki
+                        eğitimini tamamlamış olup, 1991- 2023 yılları arasında Milli Eğitim Bakanlığına bağlı okullarda
+                        Görsel Sanatlar Öğretmeni olarak çalışmıştır. 2023 yılında Denizli Hakkı Dereköylü Güzel
+                        Sanatlar
+                        Lisesinden emekli olmuştur. Kariyeri boyunca İlhan, beş kişisel sergi düzenlemiş ve birçok
+                        karma
+                        sergiye katılmıştır. Eserleri ulusal yarışmalarda tanınırlık ve başarı ödülleri kazanmıştır.
+                        Sanat
+                        pratiğinde İlhan, bilinçaltına yönelerek farklı hayvanlar, insanlar ve nesnelerin çağrışımlarını
+                        kullanarak toplumsal deneyimleri uyandırmayı ve keşfetmeyi amaçlar. Eserleri eşitsizlik, güç
+                        dinamikleri ve sosyal olaylar gibi temalara dalıp, genellikle resimsel kurgu formunu alır.
+                        İlhan'ın yaratıları izleyicileri bu konular üzerinde düşünmeye ve yorumlamaya davet eder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h2 class="mt-5">Sanat Anlayışı</h2>
+            <p>Bir sanatçı olarak İlhan, kendini keşif yolculuğuna çıkarır ve kolektif bilinçdışı ile bilinçli
+                farkındalığı bir araya getirerek bireysel mitolojik dünyasını inşa etmeye çalışır. Sanatı,
+                arketipsel imgelerle rezonansa girer ve evrensel semboller ile temaları keşfederek bunları yansıtır.</p>
+            <p>Genel olarak, Seyhan İlhan'ın sanat pratiği, toplumsal deneyimlere dayanan düşündürücü görsellerle
+                izleyicileri etkilemeye ve bilinçaltının derinliklerine inmeye odaklanır. Kendine özgü yaklaşımıyla,
+                izleyicileri eserlerini çok katmanlı olarak yorumlamaya ve bağlantı kurmaya davet ederken, kolektif
+                bilinçdışının derinliklerini keşfederek kendi sanatsal mitolojisini oluşturur.</p>
+
+            <h2>Sergiler ve Ödüller</23>
+                <ul></ul>
+                <h5>Kişisel Sergiler</h5>
+                <ul>
+                    <li>1994 Gümüşhane</li>
+                    <li>2008 Eşrefpaşa Sanat Galerisi, İzmir</li>
+                    <li>2017 Turan Bahadır Sergi Salonu, Denizli</li>
+                    <li>2023 Birleşmiş Ressamlar Ve Heykeltraşlar Derneği Galerisi - Ankara</li>
+                    <li>2024 Emin Antik Sanat Galerisi - Ankara</li>
+                </ul>
+
+                <h5>Karma Sergiler</h5>
+                <ul>
+                    <li>1991 AKM, İzmir</li>
+                    <li>1993 Gümüşhane</li>
+                    <li>1996 Alaplı Belediyesi, Zonguldak</li>
+                    <li>2000 Turan Bahadır, Denizli</li>
+                    <li>2001 Karma Sergi HALK EĞT./DENİZLİ</li>
+                    <li>2004 Karma Sergi TURAN BAHADIR/DENİZLİ</li>
+                    <li>2005 Karma Sergi TURAN BAHADIR/DENİZLİ</li>
+                    <li>2007 Karma Sergi TURAN BAHADIR/DENİZLİ</li>
+                    <li>2008 Kişisel Sergi EŞREFPAŞA SANAT GAL./İZMİR</li>
+                    <li>2008 Karma Sergi AKM/İZMİR</li>
+                    <li>2008 Karma Sergi TURAN BAHADIR/DENİZLİ</li>
+                    <li>2008 Karma Sergi DEVLET RESİM GAL./DENİZLİ</li>
+                    <li>2008 Karma Sergi TİCARET ODASI/DENİZLİ</li>
+                    <li>2009 Karma Sergi DEVLET RESİM HEYKEL SAN.GAL./DENİZLİ</li>
+                    <li>2009 Karma Sergi TURAN BAHADIR /DENİZLİ</li>
+                    <li>2010 Karma Sergi PAMUKKALE ÜNV.SERGİ SALONU/DENİZLİ</li>
+                    <li>2012 Karma Sergi MİLLİ PİYANGO SANAT GALERİSİ /ANKARA</li>
+                    <li>2014 Karma Sergi PAÜ.EĞİT.FAK.RESİM GALERİSİ /DENİZLİ</li>
+                    <li>2020 6. ARTANKARA Sergisi</li>
+                    <li>2022 Nihat Kömürcüoğlu Vakfı 1. Resim Çalıştayı</li>
+                    <li>2022 8. ARTANKARA Sergisi</li>
+                    <li>2022 Bir Grup İnsan Karma Sergi DENİZLİ</li>
+                    <li>2023 Artankara Ümit Kara Sanatevi 9.Çağdaş Sanat Fuarı- ANKARA</li>
+                    <li>2024 Artankara Arda Sanat Galerisi 10.Çağdaş Sanat Fuarı- ANKARA</li>
+                    <li>2024 IAAF fuarı Moonartgaleri – İZMİR</li>
+                    <li>2024 Barbarossa Alaçatı Uluslararası Sanat Çalıştayı - ALAÇATI</li>
+                    <li>2024 ArtContact Arda Sanat Galerisi - İSTANBUL</li>
+
+                </ul>
+
+                <h5>Yarışmalı Sergiler ve Ödüller</h5>
+                <ul>
+                    <li>2010 10. Şefik Bursalı Resim Yarışması SERGİLEME Resim Heykel Müzesi ANKARA</li>
+                    <li>2011 Yunus Emre Resim Yarışması SERGİLEME ESKİŞEHİR</li>
+                    <li>2011 11. Şefik Bursalı Resim Yarışması SERGİLEME Resim Heykel Müzesi ANKARA</li>
+                    <li>2011 71.Devlet Resim ve Heykel Sergisi SERGİLEME Resim Heykel Müzesi ANKARA</li>
+                    <li>2013 13. Şefik Bursalı Resim Yarışması SERGİLEME Resim Heykel Müzesi ANKARA</li>
+                    <li>2016 16. Şefik Bursalı Resim Yarışması SERGİLEME ANKARA</li>
+                    <li>2016 16.Şefik Bursalı Resim Yarışması SERGİLEME Resim Heykel Müzesi ANKARA</li>
+                    <li>2017 17. Şefik Bursalı Resim Yarışması SERGİLEME ANKARA</li>
+                    <li>2018 Osman Zeki Ural Ulusal Resim Yarışması 3.lük Ödülü</li>
+                </ul>
+        </div>
+    </div>
+</div>
+{% endblock content1 %}

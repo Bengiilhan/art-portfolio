@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="container d-flex align-items-center justify-content-center vh-100 mt-navbar">
+    <div class="row align-items-stretch">
+
+        <!-- Sol Taraf (Büyük Resim) - Mobilde %100 genişlik -->
+        <div class="col-lg-7 col-md-12 text-center">
+            <img class="img-fluid large-image" src="{% static 'images/seyhan.jpg' %}" alt="Large Image">
+        </div>
+
+        <!-- Sağ Taraf (İki Küçük Resim) - Mobilde alt alta gelir -->
+        <div class="col-lg-5 col-md-12 d-flex flex-column justify-content-between small-images">
+            <img class="img-fluid small-image" src="{% static 'images/resim4.jpg' %}" alt="Small Image">
+            <img class="img-fluid small-image" src="{% static 'images/resim3.jpg' %}" alt="Small Image">
+        </div>
+
+    </div>
+</div>
+</div>
+
+{% endblock content1 %}

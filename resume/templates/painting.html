@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %}
+<div class="container mt-5">
+    <h1 class="text-center section-title">Satıştaki Eserler</h1>
+    <div class="row g-4">
+        {% for eser in eserler %}
+        <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card eser-card">
+                <!-- Lightbox ile resme tıklanabilir alan ekledik -->
+                <a href="{{ eser.image.url }}" data-lightbox="gallery" data-title="{{ eser.title }}">
+                    <img src="{{ eser.image.url }}" class="card-img-top" alt="{{ eser.title }}">
+                </a>
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ eser.title }}</h5>
+                    <p class="card-text">{{ eser.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content1 %}
+
+<!-- lightbox-->
+{% block extra_scripts %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+{% endblock extra_scripts %}

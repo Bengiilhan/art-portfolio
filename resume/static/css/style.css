@@ -1,0 +1,155 @@
+body {
+    background-color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Dancing Script', cursive;
+    /* Sıcak bir kahverengi tonu */
+}
+
+/* style.css dosyanıza ekleyin */
+.lightbox .lb-image {
+    border-radius: 10px;
+}
+
+.lightbox .lb-nav a.lb-prev,
+.lightbox .lb-nav a.lb-next {
+    opacity: 0.8;
+}
+
+.lightbox .lb-nav a.lb-prev:hover,
+.lightbox .lb-nav a.lb-next:hover {
+    opacity: 1;
+}
+
+.lightbox .lb-close {
+    opacity: 0.8;
+}
+
+.lightbox .lb-close:hover {
+    opacity: 1;
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #ffc800;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.193);
+
+}
+
+.navbar-dark {
+    background-color: #284b63;
+}
+
+
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.name {
+    color: #fff;
+}
+
+
+
+.about_image {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+
+
+.display4 {
+    color: #eef3f8;
+    font-size: 24px;
+}
+
+.lead {
+    font-size: 18px;
+    color: #28a745;
+}
+
+.form-container {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Sosyal medya başlığını ve ikonları sola al */
+h4.text-left {
+    text-align: left;
+}
+
+/* Sosyal medya ikonları büyük ve sol tarafa yaslı */
+.social-icon {
+    font-size: 3rem;
+    /* İkonları büyüt */
+    color: #284b63;
+    /* Sıcak kahverengi tonu */
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    margin-right: 15px;
+    /* Aralarına boşluk ekle */
+}
+
+.social-icon:hover {
+    color: #3a6f8f;
+    /* Hover efekti ile renk değişimi */
+}
+
+/* İkonları hizalamak için */
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+
+.large-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small-image {
+    width: 100%;
+    height: 48%;
+    object-fit: cover;
+
+}
+
+.gap-3 {
+    gap: 30px !important;
+    /* Küçük resimler arasına boşluk ekle */
+}
+
+/* Navbar ile çakışmayı önlemek için */
+.mt-navbar {
+    margin-top: 200px;
+    /* 250px navbar + biraz ekstra boşluk */
+}
