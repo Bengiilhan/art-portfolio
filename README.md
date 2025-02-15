@@ -22,21 +22,22 @@ Technologies Used
 
 Installation & Setup
 Clone the repository:
-
+```sh
 git clone https://github.com/YOUR_GITHUB_USERNAME/art-portfolio.git
 cd art-portfolio
-
+```
 
 Create a virtual environment and install dependencies:
+```sh
 python -m venv venv
 source venv/bin/activate  # Mac/Linux
 venv\Scripts\activate  # Windows
 pip install -r requirements.txt
-
+```
 
 Configure environment variables
 Create a `.env` file in the project root and add:
-
+```sh
 SECRET_KEY=your_secret_key
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
@@ -47,15 +48,17 @@ ALLOWED_HOSTS=127.0.0.1,localhost
 
 # If deploying on a server, replace with your own domain:
 ALLOWED_HOSTS=yourwebsite.com,www.yourwebsite.com
-
+```
 
 Apply database migrations:
-
+```sh
 python manage.py migrate
+```
 
-Run the development server:
-
+Run the development server
+```sh
 python manage.py runserver
+```
 
 Visit `http://127.0.0.1:8000/` in your browser.
 
